@@ -1,0 +1,56 @@
+#parent p{
+    display: none;
+    background: yellow;
+    padding: 20px;
+    color: red;
+    font-size: 2rem;
+}
+div{
+    font-size: 2rem;
+    background: black;
+    color: white;
+    border: 5px solid red;
+}
+
+/* Applying Hover pseudo class on parent child relationship */
+/* div:hover p{
+
+    display: block;
+
+} */
+#parent:hover p{
+
+    display: block;
+
+}
+/* .parent_class:hover p{
+
+    display: block;
+
+} */
+
+/* ===================================
+both are same 
+*/
+
+/* #first_child_example p:first-child {
+
+    color: red;
+} */
+
+#first_child_example p:nth-child(1) {
+
+    color: red;
+}
+
+/* ===================================
+*/
+/* all child  */
+#first_child_example p:nth-child(2){
+    color: yellow;
+}
+
+/* direct child */
+#first_child_example > p:nth-child(2) {
+    color: green;
+}

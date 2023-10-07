@@ -1,0 +1,31 @@
+/* 
+pseudo element - style specified parts of an element
+e.g. 
+style the first letter / line / element
+Insert content before / after the content of the element
+
+selector : pseudo-element {
+    property: value;
+}
+*/
+
+p::first-letter{
+    color: #ff0000;
+    font-size: 2rem;
+}
+
+p::first-line{
+    color: white;
+    background: black;
+}
+
+
+h1::before{
+
+    content: 'hello '
+}
+
+h1::selection{
+    color: #ff0000;
+    background-color: yellow;
+}

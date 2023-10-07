@@ -1,0 +1,51 @@
+/* 
+
+pseudo class -  used to define a special state of an element
+
+e.g.
+1. style an element when a user hover mouse over that element
+
+2. style visited and unvisited links differently
+
+3. style an element when it gets focus
+
+selector : pseudo-class{
+    property: value;
+}
+*/
+
+
+#visited_link{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2rem;
+    background: black;
+    display: block;
+    margin-bottom: 1rem;
+
+}
+
+a{
+    color: white;
+}
+
+/* unvisited link */
+a:link {
+    color: yellow;
+}
+
+/* visited link */
+a:visited{
+ color: deeppink;
+
+}
+
+/* mouse over link */
+a:hover{
+    color: orange;
+}
+
+/* selected link */
+a:active{
+    color: green;
+}

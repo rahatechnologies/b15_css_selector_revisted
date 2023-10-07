@@ -1,0 +1,29 @@
+/* 
+Attribute selectors - style HTML elements that have specific attribute or attribute values
+
+*/
+a{
+    margin-right:10px;
+}
+
+/* only attribute */
+/* a[target] {
+    background-color: yellow;
+} */
+
+/* attribute with value */
+/* a[class="raha_technologies"]{
+    color: red;
+} */
+
+/* attribute containing the word title */
+/* a[title~="title"]{
+  color: red;
+} */
+
+
+/* attribute starts with title */
+
+a[title^="title"] {
+    color: red;
+}
