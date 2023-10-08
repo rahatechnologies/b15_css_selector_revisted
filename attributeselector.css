@@ -7,7 +7,7 @@ a{
 }
 
 /* only attribute */
-/* a[target] {
+/* a[target] { 
     background-color: yellow;
 } */
 
@@ -16,14 +16,48 @@ a{
     color: red;
 } */
 
-/* attribute containing the word title */
+/* attribute containing the word value */
 /* a[title~="title"]{
   color: red;
 } */
 
 
-/* attribute starts with title */
+/* attribute starts with value */
 
 a[title^="title"] {
     color: red;
+}
+
+
+/* attribute  containing specified value*/
+[class*="test"]{
+    background-color: yellow;
+}
+
+/* attribute ends with value */
+[class$="test"]{
+    background: red;
+}
+
+
+[class~="priya"]{
+    background: red;
+}
+
+input[type="text"]{
+    background-color: yellow;
+    width: 10rem;
+    display: block;
+}
+input[type="password"]{
+    background: red;
+    display: block;
+}
+
+input[type="button"]{
+    width: 120px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    /* display: block; */
 }
